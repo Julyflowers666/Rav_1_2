@@ -1,7 +1,9 @@
 cadastros_alunos = {}
+cont = 0
 
 def menu (cont):
     try:
+        
         print ("----menu---")
         print ("1- Cadastrar alunos")
         print ("2- lançar notas")
@@ -15,7 +17,7 @@ def menu (cont):
         if op == 1:
             cadastro()
         elif op == 2:
-            Lnotas (cont)
+            print ("")
 
     except ValueError:
         print("Erro! Digite apenas números. Tente novamente.")
@@ -46,7 +48,6 @@ def cadastro (cont):
         menu ()
 
 def Lnotas (cont):
-
     try:
 
         while cont:
@@ -60,3 +61,5 @@ def Lnotas (cont):
 
     except:
         print("kfas")
+
+Lnotas (cont)
