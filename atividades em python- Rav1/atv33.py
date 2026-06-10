@@ -5,7 +5,7 @@ maior = 0
 while contador < 10:
     num = int(input("Digite um número: "))
 
-    if num >50:
+    if num > maior:
         maior = num
 
     total_num = total_num + num
