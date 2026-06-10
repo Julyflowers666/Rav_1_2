@@ -1,7 +1,7 @@
 cadastros_alunos = {}
 cont = 0
 
-def menu (cont):
+def menu ():
     try:
         
         print ("----menu---")
@@ -17,14 +17,13 @@ def menu (cont):
         if op == 1:
             cadastro()
         elif op == 2:
-            print ("")
+            Lnotas (cont)
 
     except ValueError:
         print("Erro! Digite apenas números. Tente novamente.")
 
-def cadastro (cont):
+def cadastro ():
     try:
-        cont = 0
 
         while cont:
 
@@ -51,9 +50,7 @@ def Lnotas (cont):
     try:
 
         while cont:
-
-            for i in cont:
-                print(f"insira a nota: {cont}")
+            print(f"insira a nota do aluno(a): {cont}")
             not1 = float(input("digite a 1º nota: "))
             not2 = float(input("digite a 2º nota: "))
             not3 = float(input("digite a 3º nota: "))
@@ -62,4 +59,4 @@ def Lnotas (cont):
     except:
         print("kfas")
 
-Lnotas (cont)
+menu ()
