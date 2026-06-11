@@ -71,6 +71,6 @@ def Lnotas ():
                     print(f"Média: {media}")
 
     except:
-        print("kfas")
+        print("test")
 
 menu ()

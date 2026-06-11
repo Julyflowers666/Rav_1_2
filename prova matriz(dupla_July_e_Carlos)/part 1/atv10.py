@@ -22,3 +22,5 @@ diagonal = []
 for i in range(3): 
     diagonal.append(matriz[i][i])
 print(f"elementos diagonal: {diagonal}")
+
+print ("test")
