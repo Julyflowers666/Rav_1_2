@@ -149,7 +149,7 @@ def arquivo ():
         arquivo = open('C:/Users/vboxuser/Documents/cadastros_Alunos.txt', 'w', encoding='utf-8')
 
         for aluno in cadastros_alunos:
-            linha = (
+            arquivo.write= (
             aluno["nome"] + ";" +
             str(aluno["idade"]) + ";" +
             aluno["turma"] + ";"
